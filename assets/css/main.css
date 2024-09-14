@@ -1893,9 +1893,10 @@ figure{
 }
 
 .header-style-two {
-  background: transparent;
+  background: #ffffff;
   position: absolute;
   width: 100%;
+  /* color:#000; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -1917,7 +1918,7 @@ figure{
 .header-style-two .header-link-1 .content span,
 .header-style-two .header-link-1 .content h6
 {
-  color: #fff;
+  color: #000;
 }
 
 .header-style-two .main-menu ul li a{
@@ -1933,7 +1934,7 @@ figure{
 }
 
 .header-style-two.sticky {
-  background: #151515;
+  background: #fff;
 }
 
 /* gramen css */
@@ -4177,6 +4178,41 @@ transform: skewX(-25deg);
   text-transform: capitalize;
 }
 
+/* test start here */
+
+.test-social .socials-area{
+  background-color: var(--theme-color);
+  height:auto;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  padding:10px;
+  border-radius: 6px 0 0 6px;
+  transform: translateY(-50%);
+  z-index: 2;
+  
+}
+
+.test-social .socials-area li{
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+.test-social .socials-area li:hover{
+  background: var(--theme-color-1);
+  border: 1px solid  var(--theme-color-1);
+}
+
+
+/* test end here */
+
 .banner-main-2 .socials-area {
   position: absolute;
   right: 10px;
@@ -5203,11 +5239,17 @@ width: 100%;
 .icon-box-counter-area .icon-box {
   font-size: 70px;
   color: var(--theme-color);
+  cursor:pointer;
+}
+
+.icon-box-counter-area .icon-box:hover {
+  color: var(--theme-color-1);
 }
 
 .icon-box-counter-area h3 {
   font-weight: 700;
 }
+
 
 .icon-box-counter-area {
   display: flex;
