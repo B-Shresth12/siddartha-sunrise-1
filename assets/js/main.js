@@ -86,6 +86,26 @@
     });
 
 
+	// function thmSwiperInit() {
+	// 	// swiper slider
+	// 	if ($(".thm-swiper__slider").length) {
+	// 	  $(".thm-swiper__slider").each(function () {
+	// 		let elm = $(this);
+	// 		let options = elm.data('swiper-options');
+	// 		let thmSwiperSlider = new Swiper(elm, options);
+	// 	  });
+	// 	}
+	
+	//   }
+	 // swiper slider
+	 if ($(".thm-swiper__slider").length) {
+		$(".thm-swiper__slider").each(function () {
+		  let elm = $(this); // jQuery object for the current element
+		  let options = elm.data('swiper-options'); // Get data attribute (jQuery handles this)
+		  let thmSwiperSlider = new Swiper(elm[0], options); // Pass the DOM element to Swiper
+		});
+	  }
+
 	/*======================================
 	Mobile Menu Js
 	========================================*/
